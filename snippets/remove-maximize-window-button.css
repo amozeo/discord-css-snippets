@@ -1,0 +1,3 @@
+:where(.visual-refresh) .winButtons_c38106 > :nth-child(2) {
+    display: none;
+}
