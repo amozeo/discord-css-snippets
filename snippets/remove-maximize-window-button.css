@@ -1,3 +1,11 @@
+/**
+ * @name Remove Maximize Window Button
+ * @author Wroclaw
+ * @version 1.0
+ * @description Removes the maximize window button from the Title Bar
+ * @source https://github.com/amozeo/discord-css-snippets
+*/
+
 :where(.visual-refresh) .c38106a3f0c3ca76-winButtons > :nth-child(2) {
     display: none;
 }
