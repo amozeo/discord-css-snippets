@@ -1,0 +1,3 @@
+._5e434347c823b592-panels .e131a99484292a19-actionButtons > [type=button]:not([aria-describedby]) {
+    display: none;
+}
