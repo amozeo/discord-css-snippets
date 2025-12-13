@@ -1,3 +1,11 @@
+/**
+ * @name Remove Gifting Button from Voice Chat
+ * @author Peter Strick
+ * @version 1.0
+ * @description Removes the gifting button from the voice chat action buttons
+ * @source https://github.com/amozeo/discord-css-snippets
+*/
+
 ._5e434347c823b592-panels .e131a99484292a19-actionButtons > [type=button]:not([aria-describedby]) {
     display: none;
 }
