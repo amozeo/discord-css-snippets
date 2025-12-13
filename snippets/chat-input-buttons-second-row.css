@@ -1,3 +1,11 @@
+/**
+ * @name Chat Input Buttons Second Row
+ * @author Wroclaw
+ * @version 1.0
+ * @description Moves the chat input buttons to a second row below the text area
+ * @source https://github.com/amozeo/discord-css-snippets
+*/
+
 :where(.visual-refresh) .f75fb00fb7356cbe-channelTextArea ._740174f3d6a2c8fe-scrollableContainer {
     overflow-y: hidden;
 }
