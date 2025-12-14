@@ -95,3 +95,38 @@
 .f75fb00fb7356cbe-content > .c8ffbb79449f399c-membersWrap > :hover ._7641b507c6cdbb10-private > svg {
     translate: 0 0;
 }
+
+/* Vencord Plugin support: MemberCount */
+
+/* Assumption: vc-membercount-widget always has 1 row when expanded */
+.vc-membercount-widget {
+    height: 36px;
+    margin-top: 0;
+    align-content: flex-end;
+}
+
+/* I don't want to deal with different sizes of circle icons */
+.f75fb00fb7356cbe-content > :is(.c8ffbb79449f399c-container, .c8ffbb79449f399c-membersWrap) > :not(:hover) .vc-membercount-widget svg:not(.vc-membercount-voice-icon) {
+    display: none;
+}
+
+.f75fb00fb7356cbe-content > :is(.c8ffbb79449f399c-container, .c8ffbb79449f399c-membersWrap) > :not(:hover) .vc-membercount-widget {
+    padding-left: 0;
+    width: 64px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-end;
+    row-gap: 0;
+    font-size: 10px;
+}
+
+.f75fb00fb7356cbe-content > :is(.c8ffbb79449f399c-container, .c8ffbb79449f399c-membersWrap) > :not(:hover) .vc-membercount-widget .vc-membercount-voice-icon {
+    width: 8px;
+    height: 8px;
+}
+
+.f75fb00fb7356cbe-content > :is(.c8ffbb79449f399c-container, .c8ffbb79449f399c-membersWrap) > :not(:hover) .vc-membercount-widget .vc-membercount-container {
+    column-gap: 2px
+}
