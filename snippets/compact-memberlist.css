@@ -1,3 +1,7 @@
+/* options:
+ * --compact-member-list-transition-definition: defines the transition timing and easing
+ */
+
 .content_f75fb0 > :is(.container_c8ffbb, .membersWrap_c8ffbb) {
     width: 64px !important;
     min-width: 64px;
@@ -8,7 +12,7 @@
 .content_f75fb0 > :is(.container_c8ffbb, .membersWrap_c8ffbb) > * {
     width: 265px;
     overflow: visible;
-    transition: translate 0.25s ease-out;
+    transition: translate var(--compact-member-list-transition-definition, 0.25s ease-out);
 }
 
 .content_f75fb0 > :is(.container_c8ffbb, .membersWrap_c8ffbb) > :hover {
@@ -22,7 +26,7 @@
 /* group separator */
 
 .membersGroup_c8ffbb {
-    transition: color 0.25s ease-out;
+    transition: color var(--compact-member-list-transition-definition, 0.25s ease-out);
 }
 
 .membersGroup_c8ffbb::before {
@@ -33,7 +37,7 @@
     left: 20px;
     margin-top: 10px;
     background-color: var(--channels-default);
-    transition: background-color 0.25s ease-out;
+    transition: background-color var(--compact-member-list-transition-definition, 0.25s ease-out);
 }
 
 .content_f75fb0 > :is(.container_c8ffbb, .membersWrap_c8ffbb) > :not(:hover) .membersGroup_c8ffbb {
@@ -46,7 +50,7 @@
 
 .membersGroup_c8ffbb .roleIcon_ee71ee {
     translate: 8px -8px;
-    transition: translate 0.25s ease-out;
+    transition: translate var(--compact-member-list-transition-definition, 0.25s ease-out);
 }
 
 .content_f75fb0 > :is(.container_c8ffbb, .membersWrap_c8ffbb) > :hover .membersGroup_c8ffbb .roleIcon_ee71ee {
@@ -57,7 +61,7 @@
 
 .member__5d473 .memberInner__5d473 > :not(.avatar__91a9d) {
     translate: 8px 0;
-    transition: translate 0.25s ease-out;
+    transition: translate var(--compact-member-list-transition-definition, 0.25s ease-out);
 }
 
 .content_f75fb0 > :is(.container_c8ffbb, .membersWrap_c8ffbb) > :hover .member__5d473 .memberInner__5d473 > :not(.avatar__91a9d) {
@@ -75,12 +79,12 @@
 /* private thread instructions */
 
 .instructions__7641b, .private__7641b {
-    transition: color 0.25s ease-out;
+    transition: color var(--compact-member-list-transition-definition, 0.25s ease-out);
 }
 
 .private__7641b > svg {
     color: var(--text-default);
-    transition: translate 0.25s ease-out;
+    transition: translate var(--compact-member-list-transition-definition, 0.25s ease-out);
     translate: 9px 0;
 }
 
