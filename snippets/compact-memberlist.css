@@ -26,25 +26,33 @@
 /* group separator */
 
 .membersGroup_c8ffbb {
-    transition: color var(--compact-member-list-transition-definition, 0.25s ease-out);
+    transition: margin-right var(--compact-member-list-transition-definition, 0.25s ease-out);
 }
 
-.membersGroup_c8ffbb::before {
+.content_f75fb0 > :is(.container_c8ffbb, .membersWrap_c8ffbb) > :not(:hover) .membersGroup_c8ffbb {
+    margin-right: -50px;
+}
+
+.membersGroup_c8ffbb > [aria-hidden=true] > :first-child:before {
     content: "";
     position: absolute;
     width: 24px;
     height: 2px;
     left: 20px;
     margin-top: 10px;
-    background-color: var(--channels-default);
+    background-color: currentColor;
     transition: background-color var(--compact-member-list-transition-definition, 0.25s ease-out);
 }
 
-.content_f75fb0 > :is(.container_c8ffbb, .membersWrap_c8ffbb) > :not(:hover) .membersGroup_c8ffbb {
-    color: transparent;
+.membersGroup_c8ffbb > [aria-hidden=true] > :first-child {
+    transition: margin-left var(--compact-member-list-transition-definition, 0.25s ease-out);
 }
 
-.content_f75fb0 > :is(.container_c8ffbb, .membersWrap_c8ffbb) > :hover .membersGroup_c8ffbb::Before {
+.content_f75fb0 > :is(.container_c8ffbb, .membersWrap_c8ffbb) > :not(:hover) .membersGroup_c8ffbb > [aria-hidden=true] > :first-child {
+    margin-left: 50px;
+}
+
+.content_f75fb0 > :is(.container_c8ffbb, .membersWrap_c8ffbb) > :hover .membersGroup_c8ffbb > [aria-hidden=true] > :first-child:before {
     background-color: transparent;
 }
 
