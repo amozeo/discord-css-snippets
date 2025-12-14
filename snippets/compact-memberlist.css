@@ -2,6 +2,7 @@
     width: 64px !important;
     min-width: 64px;
     justify-content: flex-start;
+    z-index: 1;
 }
 
 .content_f75fb0 > :is(.container_c8ffbb, .membersWrap_c8ffbb) > * {
