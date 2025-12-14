@@ -33,7 +33,8 @@
     margin-right: -50px;
 }
 
-.c8ffbb79449f399c-membersGroup > [aria-hidden=true] > :first-child:before {
+.c8ffbb79449f399c-membersGroup > [aria-hidden="true"]:not(:has(> [style]))::before,
+.c8ffbb79449f399c-membersGroup > [aria-hidden="true"]:has(> [style]) > [style]::before {
     content: "";
     position: absolute;
     width: 24px;
@@ -44,15 +45,18 @@
     transition: background-color var(--compact-member-list-transition-definition, 0.25s ease-out);
 }
 
-.c8ffbb79449f399c-membersGroup > [aria-hidden=true] > :first-child {
+.c8ffbb79449f399c-membersGroup > [aria-hidden="true"]:not(:has(> [style])),
+.c8ffbb79449f399c-membersGroup > [aria-hidden="true"]:has(> [style]) > [style] {
     transition: margin-left var(--compact-member-list-transition-definition, 0.25s ease-out);
 }
 
-.f75fb00fb7356cbe-content > :is(.c8ffbb79449f399c-container, .c8ffbb79449f399c-membersWrap) > :not(:hover) .c8ffbb79449f399c-membersGroup > [aria-hidden=true] > :first-child {
+.f75fb00fb7356cbe-content > :is(.c8ffbb79449f399c-container, .c8ffbb79449f399c-membersWrap) > :not(:hover) .c8ffbb79449f399c-membersGroup > [aria-hidden="true"]:not(:has(> [style])),
+.f75fb00fb7356cbe-content > :is(.c8ffbb79449f399c-container, .c8ffbb79449f399c-membersWrap) > :not(:hover) .c8ffbb79449f399c-membersGroup > [aria-hidden="true"]:has(> [style]) > [style] {
     margin-left: 50px;
 }
 
-.f75fb00fb7356cbe-content > :is(.c8ffbb79449f399c-container, .c8ffbb79449f399c-membersWrap) > :hover .c8ffbb79449f399c-membersGroup > [aria-hidden=true] > :first-child:before {
+.f75fb00fb7356cbe-content > :is(.c8ffbb79449f399c-container, .c8ffbb79449f399c-membersWrap) > :hover .c8ffbb79449f399c-membersGroup > [aria-hidden="true"]:not(:has(> [style]))::before,
+.f75fb00fb7356cbe-content > :is(.c8ffbb79449f399c-container, .c8ffbb79449f399c-membersWrap) > :hover .c8ffbb79449f399c-membersGroup > [aria-hidden="true"]:has(> [style]) > [style]::before {
     background-color: transparent;
 }
 
