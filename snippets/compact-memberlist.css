@@ -34,7 +34,8 @@
 }
 
 .membersGroup_c8ffbb > [aria-hidden="true"]:not(:has(> [style]))::before,
-.membersGroup_c8ffbb > [aria-hidden="true"]:has(> [style]) > [style]::before {
+.membersGroup_c8ffbb > [aria-hidden="true"]:has(> [style]) > [style]::before,
+h2.membersGroup_c8ffbb:not(:has(span))::before {
     content: "";
     position: absolute;
     width: 24px;
@@ -46,17 +47,20 @@
 }
 
 .membersGroup_c8ffbb > [aria-hidden="true"]:not(:has(> [style])),
-.membersGroup_c8ffbb > [aria-hidden="true"]:has(> [style]) > [style] {
+.membersGroup_c8ffbb > [aria-hidden="true"]:has(> [style]) > [style],
+h2.membersGroup_c8ffbb:not(:has(span)) {
     transition: margin-left var(--compact-member-list-transition-definition, 0.25s ease-out);
 }
 
 .content_f75fb0 > :is(.container_c8ffbb, .membersWrap_c8ffbb) > :not(:hover) .membersGroup_c8ffbb > [aria-hidden="true"]:not(:has(> [style])),
-.content_f75fb0 > :is(.container_c8ffbb, .membersWrap_c8ffbb) > :not(:hover) .membersGroup_c8ffbb > [aria-hidden="true"]:has(> [style]) > [style] {
+.content_f75fb0 > :is(.container_c8ffbb, .membersWrap_c8ffbb) > :not(:hover) .membersGroup_c8ffbb > [aria-hidden="true"]:has(> [style]) > [style],
+.content_f75fb0 > :is(.container_c8ffbb, .membersWrap_c8ffbb) > :not(:hover) h2.membersGroup_c8ffbb:not(:has(span)) {
     margin-left: 50px;
 }
 
 .content_f75fb0 > :is(.container_c8ffbb, .membersWrap_c8ffbb) > :hover .membersGroup_c8ffbb > [aria-hidden="true"]:not(:has(> [style]))::before,
-.content_f75fb0 > :is(.container_c8ffbb, .membersWrap_c8ffbb) > :hover .membersGroup_c8ffbb > [aria-hidden="true"]:has(> [style]) > [style]::before {
+.content_f75fb0 > :is(.container_c8ffbb, .membersWrap_c8ffbb) > :hover .membersGroup_c8ffbb > [aria-hidden="true"]:has(> [style]) > [style]::before,
+.content_f75fb0 > :is(.container_c8ffbb, .membersWrap_c8ffbb) > :hover h2.membersGroup_c8ffbb:not(:has(span))::before {
     background-color: transparent;
 }
 
