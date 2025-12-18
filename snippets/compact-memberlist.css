@@ -136,3 +136,17 @@
 .f75fb00fb7356cbe-content > :is(.c8ffbb79449f399c-container, .c8ffbb79449f399c-membersWrap) > :not(:hover) .vc-membercount-widget .vc-membercount-container {
     column-gap: 2px
 }
+
+/* discord nitro custom theme fixes */
+
+.f75fb00fb7356cbe-content > .c8ffbb79449f399c-container > .c8ffbb79449f399c-membersWrap {
+    background: var(--background-gradient-chat, var(--custom-channel-members-bg));
+}
+
+.f75fb00fb7356cbe-content > .c8ffbb79449f399c-container > .c8ffbb79449f399c-membersWrap > .c8ffbb79449f399c-members {
+    background: transparent;
+}
+
+._5d473ecff348c314-member {
+    background: transparent
+}
