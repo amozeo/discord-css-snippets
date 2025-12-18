@@ -25,42 +25,28 @@
 
 /* group separator */
 
-.membersGroup_c8ffbb {
-    transition: margin-right var(--compact-member-list-transition-definition, 0.25s ease-out);
+.membersGroup_c8ffbb,
+.membersGroup_c8ffbb [style] {
+    transition: color var(--compact-member-list-transition-definition, 0.25s ease-out);
 }
 
-.content_f75fb0 > :is(.container_c8ffbb, .membersWrap_c8ffbb) > :not(:hover) .membersGroup_c8ffbb {
-    margin-right: -50px;
-}
-
-.membersGroup_c8ffbb > [aria-hidden="true"]:not(:has(> [style]))::before,
-.membersGroup_c8ffbb > [aria-hidden="true"]:has(> [style]) > [style]::before,
-h2.membersGroup_c8ffbb:not(:has(span))::before {
+.membersGroup_c8ffbb::before {
     content: "";
     position: absolute;
     width: 24px;
     height: 2px;
     left: 20px;
     margin-top: 10px;
-    background-color: currentColor;
+    background-color: var(--channels-default);
     transition: background-color var(--compact-member-list-transition-definition, 0.25s ease-out);
 }
 
-.membersGroup_c8ffbb > [aria-hidden="true"]:not(:has(> [style])),
-.membersGroup_c8ffbb > [aria-hidden="true"]:has(> [style]) > [style],
-h2.membersGroup_c8ffbb:not(:has(span)) {
-    transition: margin-left var(--compact-member-list-transition-definition, 0.25s ease-out);
+.content_f75fb0 > :is(.container_c8ffbb, .membersWrap_c8ffbb) > :not(:hover) .membersGroup_c8ffbb,
+.content_f75fb0 > :is(.container_c8ffbb, .membersWrap_c8ffbb) > :not(:hover) .membersGroup_c8ffbb [style] {
+    color: transparent !important;
 }
 
-.content_f75fb0 > :is(.container_c8ffbb, .membersWrap_c8ffbb) > :not(:hover) .membersGroup_c8ffbb > [aria-hidden="true"]:not(:has(> [style])),
-.content_f75fb0 > :is(.container_c8ffbb, .membersWrap_c8ffbb) > :not(:hover) .membersGroup_c8ffbb > [aria-hidden="true"]:has(> [style]) > [style],
-.content_f75fb0 > :is(.container_c8ffbb, .membersWrap_c8ffbb) > :not(:hover) h2.membersGroup_c8ffbb:not(:has(span)) {
-    margin-left: 50px;
-}
-
-.content_f75fb0 > :is(.container_c8ffbb, .membersWrap_c8ffbb) > :hover .membersGroup_c8ffbb > [aria-hidden="true"]:not(:has(> [style]))::before,
-.content_f75fb0 > :is(.container_c8ffbb, .membersWrap_c8ffbb) > :hover .membersGroup_c8ffbb > [aria-hidden="true"]:has(> [style]) > [style]::before,
-.content_f75fb0 > :is(.container_c8ffbb, .membersWrap_c8ffbb) > :hover h2.membersGroup_c8ffbb:not(:has(span))::before {
+.content_f75fb0 > :is(.container_c8ffbb, .membersWrap_c8ffbb) > :hover .membersGroup_c8ffbb::before {
     background-color: transparent;
 }
 
