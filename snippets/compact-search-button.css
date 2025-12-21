@@ -1,3 +1,11 @@
+/**
+ * @name Compact Search
+ * @author Wroclaw
+ * @version 1.0
+ * @description Makes the search bar compact until activated
+ * @source https://github.com/amozeo/discord-css-snippets
+*/
+
 ._974928fe84ca9647-search > ._974928fe84ca9647-searchBar {
     width: 32px !important;
     background: none;

@@ -1,3 +1,11 @@
+/**
+ * @name Always Display Active Now Pane
+ * @author Wroclaw
+ * @version 1.0
+ * @description Always display the active now playing pane
+ * @source https://github.com/amozeo/discord-css-snippets
+*/
+
 ._133bf5eea8e33a34-nowPlayingColumn {
     display: block !important;
 }
