@@ -70,11 +70,11 @@
     translate: 0 0;
 }
 
-.member__5d473 .container__4bbc6 {
+.member__5d473 .container_df39b2 {
     width: 46px;
 }
 
-.content_f75fb0 > :is(.container_c8ffbb, .membersWrap_c8ffbb) > :hover .member__5d473 .container__4bbc6 {
+.content_f75fb0 > :is(.container_c8ffbb, .membersWrap_c8ffbb) > :hover .member__5d473 .container_df39b2 {
     width: 100%;
 }
 
